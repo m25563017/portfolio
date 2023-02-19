@@ -1,0 +1,38 @@
+#car {
+    position: fixed;
+    width: 200px;
+    height: 100px;
+    background-color: rgb(28, 69, 122);
+    left: 20px;
+    top: 20px;
+}
+
+.wheel {
+    width: 50px;
+    animation-name: rotating;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+#leftWheel {
+    position: relative;
+    left: 30px;
+    top: 80px;
+}
+
+#rightWheel {
+    position: relative;
+    left: 80px;
+    top: 80px;
+}
+
+@keyframesrotating {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
