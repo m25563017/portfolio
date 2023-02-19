@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title></title>
+<link rel="shortcut icon" href="#">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<video id="myVideo" width="320" height="240"></video>
+<br>
+<button id="playBtn">Play</button>
+<button id="fullBtn">FullScreen</button>
+<br>
+<div>
+    <p>Volume : <span id="volumeDisplay">?</span>
+    <button id="lowerVolumeBtn"> - </button>
+    <button id="higherVolumeBtn"> + </button>
+    </p>
+    </div>
+    <div>
+    <p>
+    Time : <span id="timeDisplay">? / ?</span><br>
+    <input type="range" id="progressBar"
+    min="0" value="0">
+    </p>
+    </div>
+
+    <br><br><br>
+    <p>練習內容</p>
+    <span>1.顯示音量0 ~ 1 <br>
+        2.按鈕可調整是否為全螢幕<br>
+        3.顯示播放進度<br>
+        4.顯示目前/全部秒數<br>
+        5.圖形化顯示<br>
+        6.可在圖形化介面中調整當前播放進度
+        </span>
+<script src="//unpkg.com/jquery"></script>
+<script src="main.js"></script>
+</body>
+</html>
